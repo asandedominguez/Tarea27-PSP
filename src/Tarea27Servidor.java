@@ -12,8 +12,19 @@ public class Tarea27Servidor {
                String texto = new String(td.getData(), 0, td.getLength(), StandardCharsets.UTF_8);
                System.out.println(td.getAddress() + ":" + td.getPort() + ":" + texto);
 
-               byte[] respuesta = (texto).getBytes(StandardCharsets.UTF_8);
+               String[] palabras = texto.trim().split("\\s+");
+               String larga = "";
+               for (String p : palabras) {
+                   if (p.length() > larga.length()) {
+                       larga = p;
+                   }
+               }
+
+               String mensajeRespuesta = "La palabra más larga es: " + larga + " con: " + larga.length() + " caracteres";
+               byte[] respuesta = mensajeRespuesta.getBytes(StandardCharsets.UTF_8);
+
                dt.send(new DatagramPacket(respuesta, respuesta.length, td.getAddress(), td.getPort()));
+
            }
 
         } catch (Exception e) {

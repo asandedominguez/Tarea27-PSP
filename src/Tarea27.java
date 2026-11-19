@@ -43,16 +43,6 @@ public class Tarea27 {
                 }
             }
 
-            String [] medir = palabra.trim().split("\\s+");
-
-            int longitud = palabra.trim().split("\\s+").length;
-
-            if (longitud != 0) {
-                for (int i = 0; i <= longitud; i++) {
-
-                }
-            }
-
             System.out.println("Servidor no disponible");
 
         } catch (Exception e) {
