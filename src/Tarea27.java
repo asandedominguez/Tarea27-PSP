@@ -4,6 +4,8 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Tarea27 {
@@ -38,6 +40,16 @@ public class Tarea27 {
 
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
+                }
+            }
+
+            String [] medir = palabra.trim().split("\\s+");
+
+            int longitud = palabra.trim().split("\\s+").length;
+
+            if (longitud != 0) {
+                for (int i = 0; i <= longitud; i++) {
+
                 }
             }
 
