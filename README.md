@@ -8,3 +8,6 @@ He elegido enviar todas las palabras en una sola cadena de texto String, separad
 
 1 -> Utilicé la IA "Gemini" para comprender bien el funcionamiento de UTF-8 y así poder redactar correctamente el porque lo seleccioné como método de codificación. **PROMPR**: "Eh seleccionado para un proyecto el formato UTF-8".
 
+### NOTA
+
+1 -> E mencionado el formato de codificación ya que considero que es parte de la pregunta, sin embargo, no se si es del todo correcto ponerlo.
